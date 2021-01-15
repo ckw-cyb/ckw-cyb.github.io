@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        var personArray = [{ "name":"张三", "age":30 },
+                {"name":"李四", "age":40 },
+                {"name":"李四1", "age1":40 }];
+        $(personArray).each(function(){
+            alert(this.name);
+            alert(this.age);
+        });
+        
+        var countryArray = [ "中国",  "美国",  "俄罗斯" ];
+
+        $(countryArray).each(function(){
+            alert(this);
+        });
+
+        var jl = { "name" : "25",  "name" :"1" };
+        $(jl).each(function(){
+            alert(this.name);
+        });
+
+
+    </script>
+</head>
+<body>
+       
+</body>
+</html>

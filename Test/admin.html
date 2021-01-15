@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-size: 15px;
+            display: flex;
+        }
+        body>div:first-of-type{
+            width: 170px;
+            height: 1200px;
+            position: fixed;
+            background: #304156;
+        }
+        li{
+            list-style: none;
+        }
+        #list{
+            height: 100%;
+            overflow:scroll
+        }
+        #list::-webkit-scrollbar {
+            display:none
+        }
+        #list div:nth-child(2){
+            color: whitesmoke;
+        }
+        .acc_d>li div{
+            float: left;
+        }
+        .acc_d>li{
+            cursor: pointer;
+            height: 48px;
+        }
+        .acc_d>li div:first-child{
+            padding: 13px 18px 10px 10px;
+        }
+        .acc_d>li div:first-child+div{
+            padding: 11px 9px 9px 9px;
+        }
+        .trd li{
+            font-size: 14px;
+            padding: 10px 0 18px 50px;
+            text-align:left;
+            color: white;
+            cursor: pointer;
+        }
+        .trd{
+            display: none;
+            background: #1F2D3D;
+        }
+        .bg{
+            background: #263445;
+        }
+        .bg1{
+            background: #304156; 
+        }
+    </style>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function(){ 
+            $(".acc_d>li").click(function(){
+                $(".acc_d").find(".trd").slideUp(350);
+                if($(this).next().css("display")=="none"){
+                    $(this).next().slideDown(350);
+                }
+            });
+            $(".acc_d").children("li").hover(function(){
+                $(this).toggleClass("bg");
+            });
+            $(".trd").find("li").hover(function(){
+                $(this).toggleClass("bg");
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- 左边导航栏 -->
+    <div id="list">
+        <ul id="main">
+            <div class="acc_d">
+                <li>
+                    <div><img src="img/domin.png" alt="" width="18px" height="18px"></div>
+                    <div>商品管理</div><br>
+                </li>
+                <div class="trd">
+                    <ul>
+                        <li>添加商品</li>
+                        <li>商品</li>
+                        <li>修改商品</li>
+                        <li>删除商品</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="acc_d">
+                <li>
+                    <div><img src="img/yonghu.png" alt="" width="18px" height="18px"></div>
+                    <div>用户管理</div>
+                </li>
+                <div class="trd">
+                    <ul>
+                        <li>添加商品</li>
+                        <li>修改商品</li>
+                        <li>删除商品</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="acc_d">
+                <li>
+                    <div><img src="img/tui.png" alt="" width="18px" height="17px"></div>
+                    <div>退出</div><br>
+                </li>
+                <div class="trd">
+                    <ul>
+                        <li>添加商品</li>
+                        <li>修改商品</li>
+                        <li>删除商品</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="acc_d">
+                <li>
+                    <div><img src="img/domin.png" alt="" width="18px" height="18px"></div>
+                    <div>后台管理</div><br>
+                </li>
+                <div class="trd">
+                    <ul>
+                        <li>添加商品</li>
+                        <li>修改商品</li>
+                        <li>删除商品</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="acc_d">
+                <li>
+                    <div><img src="img/domin.png" alt="" width="18px" height="18px"></div>
+                    <div>后台管理</div><br>
+                </li>
+                <div class="trd">
+                    <ul>
+                        <li>添加商品</li>
+                        <li>修改商品</li>
+                        <li>删除商品</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="acc_d">
+                <li>
+                    <div><img src="img/domin.png" alt="" width="18px" height="18px"></div>
+                    <div>后台管理</div><br>
+                </li>
+                <div class="trd">
+                    <ul>
+                        <li>添加商品</li>
+                        <li>修改商品</li>
+                        <li>删除商品</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="acc_d">
+                <li>
+                    <div><img src="img/domin.png" alt="" width="18px" height="18px"></div>
+                    <div>后台管理</div><br>
+                </li>
+                <div class="trd">
+                    <ul>
+                        <li>添加商品</li>
+                        <li>修改商品</li>
+                        <li>删除商品</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="acc_d">
+                <li>
+                    <div><img src="img/domin.png" alt="" width="18px" height="18px"></div>
+                    <div>后台管理</div><br>
+                </li>
+                <div class="trd">
+                    <ul>
+                        <li>添加商品</li>
+                        <li>修改商品</li>
+                        <li>删除商品</li>
+                    </ul>
+                </div>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>
